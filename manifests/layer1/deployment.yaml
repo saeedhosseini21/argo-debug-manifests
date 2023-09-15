@@ -23,4 +23,3 @@ spec:
         name: redis
         ports:
         - containerPort: 6379
-For invalidating the yaml file

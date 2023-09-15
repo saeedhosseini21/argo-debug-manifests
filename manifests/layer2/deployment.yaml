@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metada:
-  name: redis
+  name: nginx
   labels:
-    app.kubernetes.io/name: redis
-    app.kubernetes.io/app: redis
+    app.kubernetes.io/name: nginx
+    app.kubernetes.io/app: nginx
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app.kubernetes.io/name: redis
-      app.kubernetes.io/app: redis
+      app.kubernetes.io/name: nginx
+      app.kubernetes.io/app: nginx
   template:
     metada:
-      name: redis
+      name: nginx
       labels:
-        app.kubernetes.io/name: redis
-        app.kubernetes.io/app: redis
+        app.kubernetes.io/name: nginx
+        app.kubernetes.io/app: nginx
     spec: 
       containers:
-      - image: redis
-        name: redis
+      - image: nginx
+        name: nginx
         ports:
-        - containerPort: 6379
+        - containerPort: 80

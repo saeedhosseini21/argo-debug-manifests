@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-metada:
+metadata:
   name: redis
   labels:
     app.kubernetes.io/name: redis
@@ -12,7 +12,7 @@ spec:
       app.kubernetes.io/name: redis
       app.kubernetes.io/app: redis
   template:
-    metada:
+    metaddata:
       name: redis
       labels:
         app.kubernetes.io/name: redis

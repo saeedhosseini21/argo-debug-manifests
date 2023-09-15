@@ -12,7 +12,7 @@ spec:
       app.kubernetes.io/name: nginx
       app.kubernetes.io/app: nginx
   template:
-    metada:
+    metadata:
       name: nginx
       labels:
         app.kubernetes.io/name: nginx
